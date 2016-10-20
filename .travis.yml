@@ -1,6 +1,5 @@
 language: generic
-os:
-- osx
+os: osx
 matrix:
   include:
     - os: linux
@@ -10,10 +9,12 @@ matrix:
           packages:
             - g++-5
           sources: &sources
-            - llvm-toolchain-precise
+            - llvm-toolchain-precise-3.8
             - ubuntu-toolchain-r-test
-script:
-- mkdir build
-- cd build
-- cmake .. && make
-Contact GitHub API Training Shop Blog About
+    - os: linux
+      env: COMPILER_NAME=clang CXX=clang++-3.8 CC=clang-3.8
+      addons:
+        apt:
+          packages:
+            - clang-3.8
+sources: *sources
