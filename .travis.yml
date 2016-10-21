@@ -1,5 +1,6 @@
 language: generic
-os: osx
+os:
+- osx
 matrix:
   include:
     - os: linux
@@ -9,6 +10,9 @@ matrix:
           packages:
             - g++-5
           sources: &sources
-            - llvm-toolchain-precise-3.8
+            - llvm-toolchain-precise
             - ubuntu-toolchain-r-test
-          sources: *sources
+script:
+- mkdir build
+- cd build
+- cmake .. && make
