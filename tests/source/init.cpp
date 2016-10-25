@@ -38,7 +38,7 @@
      float rv = involution(a,b);
       REQUIRE (rv ==25.0);
    } 
-{
+
     SCENARIO ("calculator square-root", "[square_root]"){
     float x = 0.25;
     double long rv = square_root (x);
