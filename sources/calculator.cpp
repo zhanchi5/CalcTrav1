@@ -18,7 +18,7 @@ double division (float a, float b)
         return a/b;
 }
 
-double involutioin(float a, float b)
+double involution(float a, float b)
 {
         double result = a;
         for(int i = 1; i <b; i++)
