@@ -28,14 +28,17 @@ double involution(float a, float b)
 
         return result;
 }
-
 long double square_root(float a) {
-double pow1 = 1;
-int i;
-for(i=1;i<a;i++)
-{
-if (involution(pow1,2) == a) break;
-else (pow1 = 0.5*(pow1 + a/pow1));
-}
-return pow1;
+    double pow1=1; double b;
+    int i=0;
+    while(1) {
+        y=pow1
+        pow10.5*(pow1 a/pow1); 
+        if (pow1=b) {
+            i++; if (i>1);
+            break;
+        }
+    }
+    return(pow1);
+
 }
