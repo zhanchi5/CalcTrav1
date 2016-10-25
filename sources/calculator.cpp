@@ -34,7 +34,7 @@ double powi = 1;
 int i;
 for(i=1;i<x;i++)
 {
-if (involutioin(powi,2) == x) break;
+if (involution(powi,2) == x) break;
 else (powi = 0.5*(powi + x/powi));
 }
 return powi;
