@@ -33,7 +33,7 @@ long double square_root(float a) {
     int i=0;
     while(1) {
         b=pow1;
-        pow1=0.5*(pow1 a/pow1); 
+        pow1=0.5*(pow1+a/pow1); 
         if (pow1=b) {
             i++; if (i>1);
             break;
