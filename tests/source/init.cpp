@@ -39,9 +39,9 @@
       REQUIRE (rv ==25.0);
    }
   SCENARIO("calculator square_root", "[square_root]") {
-     float a = 5.0;
+     float a = 16.0;
      float b = 2.0;
      
-     float rv = sub(a,b);
-      REQUIRE (rv ==3.0);
+     float rv = square_root(a,b);
+      REQUIRE (rv ==4.0);
    }
