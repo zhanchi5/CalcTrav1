@@ -29,13 +29,13 @@ double involution(float a, float b)
         return result;
 }
 
-long double square_root(float x) {
-double powi = 1;
+long double square_root(float a) {
+double pow1 = 1;
 int i;
-for(i=1;i<x;i++)
+for(i=1;i<a;i++)
 {
-if (involution(powi,2) == x) break;
-else (powi = 0.5*(powi + x/powi));
+if (involution(pow1,2) == a) break;
+else (pow1 = 0.5*(pow1 + a/pow1));
 }
-return powi;
+return pow1;
 }
