@@ -38,11 +38,10 @@
      float rv = involution(a,b);
       REQUIRE (rv ==25.0);
    }
-  /*SCENARIO("calculator square_root", "[square_root]") {
+  SCENARIO("calculator square_root", "[square_root]") {
      float a = 5.0;
      float b = 2.0;
      
      float rv = sub(a,b);
       REQUIRE (rv ==3.0);
    }
-*/
