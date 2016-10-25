@@ -37,11 +37,10 @@
      
      float rv = involution(a,b);
       REQUIRE (rv ==25.0);
-   }
-  SCENARIO("calculator square_root", "[square_root]") {
-     float a = 16.0;
-     float b = 2.0;
-     
-     float rv = square_root(a,b);
-      REQUIRE (rv ==4.0);
+   } 
+{
+    SCENARIO ("calculator square-root", "[square_root]"){
+    float x = 0.25;
+    double long rv = square_root (x);
+REQUIRE ( rv == 0.5 );
    }
