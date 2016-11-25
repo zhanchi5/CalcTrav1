@@ -34,9 +34,14 @@ int main() {
         cout<<"\nквадратный корень из c равен: "<<square_root(a) ;
         
           long double *buf = Dev(a,b);
-    if (buf) cout << "Частное: " << *buf << endl;
-else cout << "На ноль делить нельзя." << endl;
-
+        if (buf)
+        {
+                cout << "Частное: " << *buf << endl;
+        }
+        else 
+        {
+                cout << "На ноль делить нельзя." << endl;
+        }
 
         return 0;
 }
