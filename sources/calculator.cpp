@@ -15,7 +15,12 @@ double  multiplication (float a, float b)
 
 double division (float a, float b)
 {
-        return a/b;
+        if (b != 0) {
+		long double *buf = new long double;
+		*buf = a / b;
+		return buf;
+	}
+        else return nullptr;
 }
 
 double involution(float a, float b)
