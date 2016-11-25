@@ -5,7 +5,7 @@ using namespace std;
 int main() {
 
         float a;
-        float b;
+        unsigned int b;
         
         double summary(float a, float b);
         long double division(float a, float b); // деление
