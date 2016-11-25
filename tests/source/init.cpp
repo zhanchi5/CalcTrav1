@@ -28,7 +28,7 @@
      float a = 5.0;
      float b = 2.0;
      
-     float rv = division(a,b);
+     long double rv = *division(a,b);
       REQUIRE (rv ==2.5);
    }
   SCENARIO("calculator involution", "[involution]") {
