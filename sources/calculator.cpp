@@ -13,7 +13,7 @@ double  multiplication (float a, float b)
         return a*b;
 }
 
-double *division (float a, float b)
+long double *division (float a, float b)
 {
         if (b != 0) {
 		long double *buf = new long double;
