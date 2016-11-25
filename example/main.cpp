@@ -16,6 +16,9 @@ int main() {
 
 
         setlocale(LC_ALL,"rus");
+        
+        
+        
 
         cout<< "Введите значение a\n ";
         cin>>a;
@@ -29,6 +32,10 @@ int main() {
         cout<<"\nЧастное равно: "<< division(a,b);
         cout<<"\na в степени c равно: "<< involution(a,b);
         cout<<"\nквадратный корень из c равен: "<<square_root(a) ;
+        
+          long double *buf = Dev(a,b);
+    if (buf) cout << "Частное: " << *buf << endl;
+else cout << "На ноль делить нельзя." << endl;
 
 
         return 0;
