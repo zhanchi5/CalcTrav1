@@ -33,7 +33,7 @@ int main() {
         cout<<"\na в степени c равно: "<< involution(a,b);
         cout<<"\nквадратный корень из c равен: "<<square_root(a) ;
         
-          long double *buf = Dev(a,b);
+          long double *buf = division(a,b);
         if (buf)
         {
                 cout << "Частное: " << *buf << endl;
