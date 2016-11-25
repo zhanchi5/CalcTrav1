@@ -6,18 +6,7 @@ int main() {
 
         float a;
         unsigned int b;
-        
-        double summary(float a, float b);
-        long double division(float a, float b); // деление
-        double multiplication(float a, float b);
-        double sub(float a, float b);
-        double involution(float a, float b);
-        double square_root(float a); //произведение, Разность, возведение в степень, квадратный корень
-
-
-        setlocale(LC_ALL,"rus");
-        
-        
+               
         
 
         cout<< "Введите значение a\n ";
